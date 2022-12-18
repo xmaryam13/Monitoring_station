@@ -72,8 +72,10 @@ void loop(){
 
 
   //  check if temp_c and other variables are not numbers, then return
-
-
+  if (isnan(temp_c) || isnan(temp_f) || isnan(hum_d)) {
+    Serial.println("Can't get temperature and humidity");
+    return;
+  }
 
   //  print all the values
   Serial.print("Temperature:");
