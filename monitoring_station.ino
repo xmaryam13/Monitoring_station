@@ -55,7 +55,7 @@ void loop(){
   //  calculating temperature in celcius
   float temp_c = dht_sensor.readTemperature();  //  DHT works in 0 to 50 deg celcius
   float temp_f = dht_sensor.readTemperature(true);
-  float temp_k = temp_c+273.15
+  float temp_k = temp_c+273.15;
   float hum_d = dht_sensor.readHumidity();
   float hum_dew = (temp_c-(100-hum_d)/5);
   //  calculate temperature in fahrenheit
